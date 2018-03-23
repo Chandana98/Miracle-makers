@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contacts</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/script.js"></script> 
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/TMForm.js"></script>
+		<script>
+			$(document).ready(function(){
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			}) 
+		</script>
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+			</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="" id="top">
+<!--==============================header=================================-->
+		<header>
+			<div class="clear"></div>
+			<div class="container_12">
+				<div class="grid_12">
+					<h1>
+						<a href="index.html">
+							<img src="images/logo.png" alt="Your Happy Family">
+						</a>
+					</h1>
+					<div class="menu_block">
+						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+							<ul class="sf-menu">
+								<li>
+									<a href="index.html">Home</a>
+									<ul>
+										<li><a href="#">history</a></li>
+										<li><a href="#">offers</a></li>
+										<li>
+											<a href="#">news</a>
+											<ul>
+												<li><a href="#">fresh </a></li>
+												<li><a href="#">archive</a></li>
+											</ul>
+										</li>
+									</ul> 
+								</li>
+								<li><a href="index-1.html">Videos </a></li>
+								<li><a href="index-2.html">Campaigns</a></li>
+								
+								<li class="current"><a href="index-4.html">Contacts</a></li>
+									<li><a href="requestform.jsp">Request Form</a></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+<!--==============================Content=================================-->
+			<div class="content">
+				<div class="container_12">
+					<div class="grid_12">
+					<div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=hyderabad+(Mirracle%20Makers)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Add Google Map to website</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe></div><br />
+						<!--  <div class="map">
+							<figure class=" ">
+							<iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+							               
+							               </figure>
+						</div>
+						-->
+					</div>
+					<div class="grid_4">
+						<h3>Address</h3>
+						<div class="map">
+							<address>
+								<dl>
+									<dt>Mirracle Makers <br>
+										GNITS,Shaikpet<br>
+										Hyderabad,Telangana
+									</dt>
+									<dd><span>Freephone:</span>9988776655</dd>
+									<dd><span>Telephone:</span>040-22334545</dd>
+									
+									<dd>E-mail: <a href="#" class="col1">mail@demolink.org</a></dd>
+									<dd>Skype: <a href="#" class="col1">@skypename</a></dd>
+								</dl>
+							</address>
+							 
+						</div>
+					</div>
+					<div class="grid_8">
+						<h3>Contact Form</h3>
+						<form id="form">
+							<div class="success_wrapper">
+								<div class="success-message">Contact form submitted</div>
+							</div>
+							<label class="name">
+								<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid name.</span>
+							</label>
+							<label class="email">
+								<input type="text" placeholder="E-mail:" data-constraints="@Required @Email" />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid email.</span>
+							</label>
+							<label class="phone">
+								<input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/>
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid phone.</span>
+							</label>
+							<label class="message">
+								<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*The message is too short.</span>
+							</label>
+							<div>
+								<div class="clear"></div>
+								<div class="btns">
+									<a href="#" data-type="submit" class="btn">Send</a>
+									<a href="#" data-type="reset" class="btn">Clear</a>
+								</div>
+							</div>
+						</form>   
+					</div>
+				</div>
+			</div>
+<!--==============================footer=================================-->
+			<footer>	
+				<div class="hor bg3"></div>
+				<div class="container_12">
+					<div class="grid_12 ">  
+						<div class="socials">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<div class="clear"></div>
+						</div>
+						<div class="copy">
+							<strong>Mirracle Makers</strong> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <br>
+							Website designed by GNITS Students
+						</div>  
+					</div>
+				</div>  
+			</footer>
+		</div>
+	</body>
+</html>
+
